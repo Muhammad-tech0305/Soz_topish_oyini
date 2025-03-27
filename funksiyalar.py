@@ -25,9 +25,9 @@ def play():
     word_letters = set(word)
     user_letters = ''
     
-    print(f"Men {len(word)} xonali soz o'yladim. Topa olasizmi? (kirillcha harflar kiriting) ")
+    print(f"Men {len(word)} xonali so'z o'yladim. Topa olasizmi? (kirillcha harflar kiriting) ")
     
-    while len(word_letters)>0:
+    while len(word_letters)>=1:
         print(display(user_letters, word))
         
         if len(user_letters)>0:
@@ -47,7 +47,8 @@ def play():
             print("Bunday harf yo'q.")
         
         user_letters += letter
-    print(f"Tabriklayman! {word} so'zini {len(user_letters)} ta urinishda topdingiz.")
+    
+    print(f"Tabriklayman! '{word}' so'zini {len(user_letters)} ta urinishda topdingiz.")
         
         
         
